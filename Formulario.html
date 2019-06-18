@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <meta charset="utf-8">
+   <title>Formulários</title>
+  </head>
+  <body>
+
+<h1>Formulário - Cadastro de Funcionários</h1>
+
+     <form action="http://143.106.241.1/matioli/2017/cadastro.php" method="post">
+             
+            <label for="nome">nome:</label><br>
+             <input type="text" size="30"  maxlength="20" 
+             minlength="5" placeholder="Digite seu nome"
+              required spellcheck name="nome" id="nome">
+
+
+             <br><br>
+
+             <label for="idade">idade:</label><br>
+             <input type="text" size="5"  maxlength="3" 
+             minlength="2" placeholder="Sua idade"
+              required spellcheck name="idade" id="idade">
+
+
+             <br><br>
+
+            Cargo:<br>
+             <input type="text" value="professor" disabled name="cargo">
+             
+
+              <br><br>
+
+             Cargo:<br>
+             <input type="text" value="professor" readonly name="cargo">
+
+             <br><br>
+
+             <label for="senha">senha:</label><br>
+             <input type="password" placeholder="senha" maxlength="10" 
+             minlength="8" name="senha" id="senha">
+
+             <br><br>
+             
+             <label for="cor">cor:</label><br>
+             <input type="color" value="#ff0000" name="cor" id="cor">
+
+             <br><br>
+            
+            Nº de fihos<br>
+            <input type="number" min="1" max="10" step="2" name="filhos">
+
+             <br><br>
+
+             Sexo:<br>
+             <label for="M">M:</label><br>
+             <input type="radio" name="sexo" value="M" id="M" checked>
+
+             <label for="F">F:</label><br>
+             <input type="radio" name="sexo" value="F" id="F" checked>
+
+            <br><br>
+  
+          Período de aula:<br>
+            
+            <input type="checkbox" name="manhã" id="manhã">manhã
+
+           
+            <input type="checkbox" name="tarde" id="tarde">tarde
+
+        
+            <input type="checkbox" name="noite" id="noite">noite
+
+            <br><br>
+
+            <fieldset>
+            <legend>Data</legend>
+            
+            Data de nascimento<br>
+            <input type="date" name="nascimento"> 
+
+            <br><br>
+
+            Data e hora<br>
+            <input type="datetime-local" name="hora">
+
+            <br><br>
+
+            Mês do cadastro<br>
+            <input type="month" name="mês">
+
+            <br><br>   
+
+            Semana do cadastro<br>
+            <input type="week" name="semana">
+            
+            </fieldset>
+
+            <br><br> 
+
+            Email:<br>
+            <input type="email" placeholder="e-mail" name="email">
+
+            <br><br>
+            Nº de filhos:<br>
+            <input type="number" placeholder="nº de filhos" min="1" max="5"
+             step="2">
+
+             <br><br>
+
+             Capacitação:<br>
+             <input type="range" min="0" max="10" name="Capacitação">
+
+             <br><br>
+
+             Buscar:<br>
+             <input type="search" placeholder="termo de pesquisa" name="busca">
+
+             <br><br>
+
+             Site:<br>
+             <input type="url" placeholder="endereço do site" name="site">
+
+             <br><br>
+
+             Observação:<br>
+             <textarea rows="3" cols="20" spellcheck="true" name="observação">
+             </textarea>
+
+             <br><br>
+
+             Curso:<br>
+             <select name="curso">
+               <option></option>
+
+               <option value="Informática">Informática</option>
+               <option value="Edificações">Edificações</option>
+               <option value="Geomática">Geomática</option>
+               <option value="Mecânica">Mecânica</option>
+               <option value="Enfermagem">Enfermagem</option>
+             </select>
+             
+             <br><br>
+
+             Áreas preferidas:<br>
+             <select size="2" multiple name="Áreas">
+               <option value="Exatas">Exatas</option>
+               <option value="Humanas"Humanas Selected>Humanas</option>
+               <option value="Biológicas">Biológicas</option>
+              </select>
+            
+             <br><br>
+
+             Veículos que utilizará no campus:<br>
+
+             <select name="veiculos">
+             <optgroup label="carros">
+               <option value="GM">GM</option>
+               <option value="VW" Selected>VW</option>
+               <option value="Renault">Renault</option>
+              </optgroup>
+
+
+
+              <optgroup label="moto">
+               <option value="Honda">Honda</option>
+               <option value="Suzuki" Selected>Suzuki</option>
+               <option value="Yamaha">Yamaha</option>
+              </optgroup>
+
+              </select>
+
+              <br><br>
+
+              Conhecimento:<br>
+
+              <input name="conhecimento"  list="lista-conhecimento">
+
+              <datalist id="lista-conhecimento">
+                <option value="HTML5">HTML5</option>
+                <option value="HTML4">HTML4</option>
+                <option value="CSS3">CSS3</option>
+                <option value="PHP">PHP</option>
+              </datalist>
+
+              <br><br>
+
+              Foto:<br>
+              <input type="file" name="Foto">
+
+              <input type="hidden" name="codigo de cadastro" value="123">
+
+              <br><br>
+
+              <input type="reset" value="limpar">
+
+              <br><br>
+
+              <input type="button" onclick="alert('oi!')" value="botao">
+
+              <br><br>
+
+
+            <input type="submit" value="cadastrar">
+
+     </form>
+
+</body>
